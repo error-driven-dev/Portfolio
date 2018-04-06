@@ -1,0 +1,26 @@
+﻿body { font-family: "BarleyScript-Textured";
+    background-image: url("/images/3rows.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+@font-face {
+    font-family: "BarleyScript-Textured";
+    src: url("BarleyScript-Textured.otf") format("opentype");
+}
+.logo {
+    width: 40%;
+    margin: 65px 500px;
+    
+}
+.aboutme { display: inline-block;
+    width: 500px;
+}
+.navbar-dark {
+    background-color: #008080;
+    color: white;
+}
+
+.navbar-dark, .nav-link{ color: white;}
+
+.nav-link, li{ margin: 10px; list-style: none; 
+}

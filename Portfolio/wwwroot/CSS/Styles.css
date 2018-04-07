@@ -1,5 +1,5 @@
 ﻿body { font-family: "BarleyScript-Textured";
-    background-image: url("/images/3rows.jpg");
+    background-image: url("/images/jars.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -8,8 +8,11 @@
     src: url("BarleyScript-Textured.otf") format("opentype");
 }
 .logo {
-    width: 40%;
-    margin: 65px 500px;
+    width: 750px;
+    margin: 50px 600px;
+    background: ivory;
+    padding: 35px
+
     
 }
 .aboutme { display: inline-block;

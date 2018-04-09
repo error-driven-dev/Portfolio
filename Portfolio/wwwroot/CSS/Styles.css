@@ -1,29 +1,69 @@
-﻿body { font-family: "BarleyScript-Textured";
-    background-image: url("/images/jars.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+﻿body {
+    font-family: "BarleyScript-Textured";
+    background: url("/images/cutinbottom2rows.jpg") no-repeat;
+    background-size: cover;
+   
 }
+
+
+
 @font-face {
     font-family: "BarleyScript-Textured";
     src: url("BarleyScript-Textured.otf") format("opentype");
 }
-.logo {
-    width: 750px;
-    margin: 50px 600px;
-    background: ivory;
-    padding: 35px
-
+    @font-face {
+        font-family: "TradeSupply-Textured";
+        src: url("TradeSupply-Textured.otf") format("opentype");
+    }
+    .main{ align-items: center}
+    .logo {
+    
+    width: 850px;
+    margin: 100px 600px;
+    background: antiquewhite;
+    padding: 80px 80px;
+    position: fixed ;
+        z-index: 9;
     
 }
 .aboutme { display: inline-block;
     width: 500px;
 }
-.navbar-dark {
-    background-color: #008080;
+.navbar-brand{ font-size: 45px; color: antiquewhite; z-index:10}
+    .navbar-dark {
+    
     color: white;
 }
+.navbar { height: 80px;
+    background-color: #550000
+}
 
-.navbar-dark, .nav-link{ color: white;}
-
+.pagelinks { width: 125px; margin-left: 220px}
 .nav-link, li{ margin: 10px; list-style: none; 
 }
+
+.nameplate { width: 250px;  margin: 85px 0 0 0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

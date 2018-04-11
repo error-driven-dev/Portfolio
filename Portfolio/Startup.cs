@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Portfolio.Models;
 
 namespace Portfolio
 {
@@ -24,6 +25,8 @@ namespace Portfolio
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IEmailSender, AuthMessageSender>();
+            services.Configure<EmailSettings>(_configuration.GetSection("EmailSettings"));
             services.AddMvc();
         }
 
@@ -35,7 +38,7 @@ namespace Portfolio
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvcWithDefaultRoute();
+            app.UseMvc(routes=> routes.MapRoute("default", "{controller=home}/{action=index}"));
             app.UseStaticFiles();
         }
     }

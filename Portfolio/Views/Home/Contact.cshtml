@@ -1,54 +1,10 @@
-﻿@model Portfolio.Models.ContactForm
-
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>View</title>
-</head>
-<body>
-
-<h4>Send me a message...</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Contact" method="post">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="FirstName" class="control-label">First Name: </label>
-                <input asp-for="FirstName" class="form-control" />
-                <span asp-validation-for="FirstName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="LastName" class="control-label">Last Name: </label>
-                <input asp-for="LastName" class="form-control" />
-                <span asp-validation-for="LastName" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Phone" class="control-label">Phone: </label>
-                <input asp-for="Phone" class="form-control" />
-                <span asp-validation-for="Phone" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label">Email: </label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Message" class="control-label">Message: </label>
-                <textarea asp-for="Message" class="form-control" rows="5"/> </textarea>
-                <span asp-validation-for="Message" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary" />
-            </div>
-        </form>
-    </div>
+﻿<h3 class="heading">Get in touch...</h3>
+<div class="subheading">
+    <h6>Have questions, comments, critisism, advice, report a bug?? I would love to hear from you!</h6>
+    <h6>Please use the following mothods to contact me:</h6>
 </div>
-
-
-
-</body>
-</html>
+<div class="content">
+    <p>Phone: 206-476-7091</p>
+    <p>Email: CodeByHart@gmail.com</p>
+    <p>LinkedIn: https://www.linkedin.com/in/beth-hart/</p>
+</div>

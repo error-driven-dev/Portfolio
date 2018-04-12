@@ -1,55 +1,80 @@
-﻿body.home {
-    font-family: "BarleyScript-Textured";
-    background: url("/images/cutinbottom2rows.jpg") no-repeat;
-    background-size: cover;
-   
+﻿* {
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
+.renderbody{ margin-top: 2%; margin-left:5%}
 
+body.home {
+
+    background: url("/images/cutinbottom2rows.jpg") no-repeat  fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 40% 40%;
+}
 
 @font-face {
     font-family: "BarleyScript-Textured";
     src: url("BarleyScript-Textured.otf") format("opentype");
 }
-    @font-face {
+@font-face {
         font-family: "TradeSupply-Textured";
         src: url("TradeSupply-Textured.otf") format("opentype");
-    }
-    .main{ align-items: center}
-    .logo {
-    
-    width: 850px;
-    margin: 100px 600px;
+}
+
+.logo {
+    height: 70%;
     background: antiquewhite;
-    padding: 80px 80px;
-    position: fixed ;
-        z-index: 9;
-    
+    padding: 70px;
+    margin: -50px 0 0 -50px;
+    position: fixed;
+    left: 50%;
+    right: 50%;
 }
 .aboutme { display: inline-block;
     width: 500px;
 }
-.navbar-brand{ font-size: 45px; color: antiquewhite; z-index:10}
-    .navbar-dark {
-    
+.navbar-brand{  color: antiquewhite; z-index:10}
+.navbar-dark {
     color: white;
 }
-.navbar { height: 80px;
-    background-color: #550000
+
+.navbar { height: 5vw;
+    max-width: 100%;
+    background-color: #550000;
+
 }
 
-.pagelinks { width: 125px; margin-left: 220px}
-.nav-link, li{ margin: 10px; list-style: none; 
+
+ li{ list-style: none;
+ 
 }
 
-.nameplate { width: 250px;  margin: 85px 0 0 0;}
+.nameplate { width: 10vw;  margin: 5% 0 0 0;}
 
 
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 100%;
+    max-height: 100%;
+    background-color: antiquewhite;
+    height: 60%;
+    padding: 3%
+}
 
+.pagelinks{ width: 8vw; margin-left: 8vw; }
 
+.subheading{margin-top: 2%}
+.content{margin-top: 2%}
 
-
-
+h3{ font-size: 3vw;}
 
 
 
